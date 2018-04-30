@@ -5,39 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CS CLub Events</title>
+  <link rel="stylesheet" type="text/css" href="jsCalendar/source/jsCalendar.css">
+  <script type="text/javascript" src="jsCalendar/source/jsCalendar.js"></script>
   <style>
-    section#calendar {
+    section#calendar_section {
       width: 50%;
       float: left;
     }
-    section#eventdescription {
+    section#event_description_section {
       width: 50%;
       float: right;
     }
     h1 {text-align:center;}
+    hr {clear: both;}
+    body {margin:10%;padding:0}
   </style>
 </head>
 
 <body>
   <h1>Events Page</h1>
-  <section id="calendar">
+  <section id="calendar_section">
     <!--Calendar left side of page-->
-    <p>
-        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
-        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
-    </p>
+    <div class="auto-jsCalendar blue" data-zero-fill="true" data-month-format="month YYYY"
+        data-day-format="DDD" align="right"></div>
   </section>
-  <section id="eventdescription">
+  <section id="event_description_section">
     <!--Event description right side of page-->
-    <p>
+    <h2 id="event_title">Event Title</h2>
+    <p id="event_description">
         sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
         sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
     </p>
+    <textarea>Enter Name</textarea>
+    <button>RSVP</button>
   </section>
   <hr>
-  <section id="request event">
+  <section id="request_event_section">
     <!--Request event form-->
     <h1>Request Event Form</h1>
+    <textarea>Enter Event Description</textarea>
+    <br>
+    <textarea>Enter Contact Email</textarea>
+    <button>Submit</button>
   </section>
 </body>
 </html>
