@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <h1>Events Page</h1>
+  <h1>CS Club Events Page</h1>
   <section id="calendar_section">
     <!--Calendar left side of page-->
     <div class="auto-jsCalendar blue" data-zero-fill="true" data-month-format="month YYYY"
@@ -37,12 +37,16 @@
     <!--Event description right side of page-->
     <h2 id="event_title">Event Title</h2>
     <p id="event_description">
-        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
-        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
+        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text
     </p>
-    <textarea>Enter Name</textarea>
-    <button>RSVP</button>
-  </section>
+
+    <form>
+      <input type="text" name = "Name">
+      <input type="submit" value="RSVP">
+
+  </form>
+</section>
   <hr>
   <section id="request_event_section" style="padding: 5%">
     <!--Request event form-->
@@ -50,7 +54,7 @@
     <form>
       <!-- Need to add an action to the form tag so we can collect the input-->
       Enter Event Description:
-      <br> 
+      <br>
       <textarea name="eventdescription" placeholder="Enter event description..." style="height:200px; width:100%"></textarea>
       <br>
       Enter Contact Email:
