@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>CS Club Events</title>
+  <link rel="stylesheet" type="text/css" href="jsCalendar/source/jsCalendar.css">
+  <script type="text/javascript" src="jsCalendar/source/jsCalendar.js"></script>
+  <style>
+    section#calendar_section {
+      width: 50%;
+      float: left;
+    }
+    section#event_description_section {
+      width: 50%;
+      float: right;
+    }
+    h1 {text-align:center;}
+    hr {clear: both;}
+    body {
+      margin-left:20%;
+      margin-right:20%;
+    }
+  </style>
 </head>
-<body>
 
+<body>
+  <h1>CS Club Events Page</h1>
+  <section id="calendar_section">
+    <!--Calendar left side of page-->
+    <div class="auto-jsCalendar blue" data-zero-fill="true" data-month-format="month YYYY"
+        data-day-format="DDD" align="center"></div>
+    <br>
+  </section>
+  <section id="event_description_section">
+    <!--Event description right side of page-->
+    <h2 id="event_title">Event Title</h2>
+    <p id="event_description">
+        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text
+    </p>
+
+    <form>
+      <input type="text" name = "Name" placeholder="Enter your Name">
+      <input type="submit" value="RSVP">
+
+  </form>
+</section>
+  <hr>
+  <section id="request_event_section" style="padding: 5%">
+    <!--Request event form-->
+    <h1>Request Event Form</h1>
+    <form>
+      <!-- Need to add an action to the form tag so we can collect the input-->
+      Enter Event Description:
+      <br>
+      <textarea name="eventdescription" placeholder="Enter event description..." style="height:200px; width:100%"></textarea>
+      <br>
+      Enter Contact Email:
+      <br>
+      <input type="text" name = "contactemail">
+      <input type="submit" value="Submit">
+    </form>
+  </section>
 </body>
 </html>
